@@ -13,7 +13,7 @@ def _run_git_commands(repo_dir):
 
 def _walk_dir(dir):
   """Walk through dir and return true if 
-  we find a directory labelled .git, otherwis
+  we find a directory labelled .git, otherwise
   return false"""
   for filename in os.listdir(dir):
     f = os.path.join(dir, filename)
