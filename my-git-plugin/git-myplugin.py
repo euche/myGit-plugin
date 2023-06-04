@@ -6,6 +6,7 @@ import subprocess
 def _run_git_commands(repo_dir):
   """Runs the following commands in order
   on the repo given"""
+  subprocess.run(["git","status"])
   subprocess.run(["git", "pull"])
   subprocess.run(["git", "push"])
   subprocess.run(["git", "push", "--tags"])  
